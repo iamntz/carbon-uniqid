@@ -1,0 +1,19 @@
+{
+    "name": "iamntz/carbon-uniqid",
+    "description": "Provides an unique ID field for Carbon Fields",
+    "keywords": ["wordpress", "carbon-field"],
+    "homepage": "https://github.com/iamntz/carbon-uniqid",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "require": {
+        "htmlburger/carbon-fields": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "iamntz\\uniqid\\": "src/"
+        }
+    }
+}

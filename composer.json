@@ -5,9 +5,7 @@
     "homepage": "https://github.com/iamntz/carbon-uniqid",
     "type": "library",
     "license": "GPL-2.0+",
-    "require": {
-        "htmlburger/carbon-fields": "^2.0"
-    },
+    "require": {},
     "autoload": {
         "files": [
             "init.php"

@@ -5,13 +5,14 @@
     "homepage": "https://github.com/iamntz/carbon-uniqid",
     "type": "library",
     "license": "GPL-2.0+",
+    "authors": [],
     "require": {},
     "autoload": {
         "files": [
             "init.php"
         ],
         "psr-4": {
-            "iamntz\\uniqid\\": "src/"
+            "iamntz\\carbonfields\\uniqid\\": "core"
         }
     }
 }

@@ -1,17 +1,17 @@
 <?php
 
-namespace iamntz\uniqid;
+namespace iamntz\carbonfields\uniqid;
 
-use Carbon_Fields\Field\Field as Field;
+use Carbon_Fields\Field\Field;
 
 class Uniqid_Field extends Field
 {
 	public static function admin_enqueue_scripts()
 	{
-		$root_uri = \Carbon_Fields\Carbon_Fields::directory_to_url(CARBON_UNIQID_DIR);
+		$root_uri = \Carbon_Fields\Carbon_Fields::directory_to_url(CARBON_FIELD_UNIQID_DIR);
 
-		wp_enqueue_script('uniqid', $root_uri . '/assets/js/bundle.js', ['carbon-fields-boot']);
-		wp_enqueue_style('uniqid', $root_uri . '/assets/css/field.css');
+		wp_enqueue_script('uniqid', $root_uri . '/assets/dist/bundle.js', ['carbon-fields-core']);
+		wp_enqueue_style('uniqid', $root_uri . '/assets/dist/bundle.css');
 	}
 
 	/**
@@ -38,9 +38,7 @@ class Uniqid_Field extends Field
 	{
 		$field_data = parent::to_json($load);
 
-		$field_data = array_merge($field_data, [
-
-		]);
+		$field_data = array_merge($field_data, []);
 
 		return $field_data;
 	}

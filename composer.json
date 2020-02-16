@@ -4,7 +4,7 @@
     "keywords": ["wordpress", "carbon-field"],
     "homepage": "https://github.com/iamntz/carbon-uniqid",
     "type": "library",
-    "license": "GPL-2.0+",
+    "license": "MIT",
     "authors": [],
     "require": {},
     "autoload": {
